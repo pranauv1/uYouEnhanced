@@ -222,10 +222,10 @@ extern NSBundle *uYouPlusBundle();
             // Prompt to export uYouEnhanced settings - @bhackel
             UIAlertController *exportAlert = [UIAlertController alertControllerWithTitle:@"Export Settings" message:@"Note: This feature cannot save iSponsorBlock and most YouTube settings.\n\nWould you like to also export your uYouEnhanced Settings?" preferredStyle:UIAlertControllerStyleAlert];
             [exportAlert addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
-            [exportAlert addAction:[UIAlertAction actionWithTitle:@"Export" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            /**[exportAlert addAction:[UIAlertAction actionWithTitle:@"Export" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 // Export uYouEnhanced Settings functionality - @bhackhel
                 [%c(YTLUserDefaults) exportYtlSettings];
-            }]];
+            }]];*/
             [settingsViewController presentViewController:exportAlert animated:YES completion:nil];
             return YES;
         }
